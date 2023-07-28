@@ -42,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Aladin, cursive;
+  font-family: 'Shadows Into Light', cursive;  
   font-weight: 500;
   line-height: 1.25;
   margin: 5px 0;
@@ -163,7 +163,7 @@ header img {
   z-index: 0;
 }
 nav {
-  font-family: Aladin, cursive;
+  font-family: 'Shadows Into Light', cursive;
   font-size: 2.5rem;
   margin: 30px 20px;
   position: relative;
@@ -191,6 +191,7 @@ footer a {
   color: var(--light);
   margin: 10px 20px;
   opacity: 0.5;
+  
   transition: all 0.3s ease-in-out;
 }
 footer a:hover {

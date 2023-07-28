@@ -3,19 +3,19 @@ main {
   max-width: 90%;
   padding: 50px 30px;
 }
-:root {
-  --primary: #8c54ff;
-  --secondary: #31343D;
+/* :root {
+  --primary: #000000;
+  --secondary: #343d31;
   --tertiary: #b12704;
   --light: #fafafa;
   --dark: #799FBA;
-  --darker: #1F3B60;
+  --darker: #000000;
   --alpha: rgba(255,255,255,.7);
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -33,28 +33,49 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: 0.1em;
-  background: var(--darker);
-  color: var(--light);
+  background: black;
+  color: white;
   font-family: 'Open Sans', sans-serif;
 }
 
-h1,
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 800;
+  margin: 5px 0;
+  line-height: 1.25;
+}
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Aladin', cursive;
-  font-weight: 500;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 800;
   margin: 5px 0;
   line-height: 1.25;
 }
 
 h1 {
+  position: relative; /* Ensure proper positioning of the ::before pseudo-element */
+  color: rgba(255, 0, 136); /* Text color */
   font-size: 5rem;
   margin: 50px 20px;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 4px 3px 15px rgba(212, 212, 212, 0.929);
 }
+
+h1::before {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute; /* Position the circle relative to the H1 */
+  top: 50%; /* Position the circle vertically in the middle */
+  left: 50%; /* Position the circle horizontally in the middle */
+  transform: translate(-50%, -50%); /* Center the circle exactly behind the text */
+  width: 100px; /* Adjust the circle's size as needed */
+  height: 100px; /* Adjust the circle's size as needed */
+  background-color: #fff; /* White circle color */
+  border-radius: 50%; /* Create a circular shape */
+  z-index: -1; /* Place the circle behind the text (lower z-index) */
+}
+
 
 h2 {
   font-size: 2rem;
@@ -93,13 +114,8 @@ a:hover {
   transition: all .2s ease-in-out;
 }
 
-header {
-  background: var(--dark);
-}
 
-header a {
-  color: var(--light);
-}
+
 
 button {
   font-size: 1rem;
@@ -179,14 +195,17 @@ header img {
   position: absolute;
   top: 0;
   left: 0;
-  height: auto;
-  filter: sepia(1) opacity(60%);
-  opacity: 0.5;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
+
+
 
 nav {
   position: relative;
-  font-family: 'Aladin', cursive;
+  font-family: 'Shadows Into Light', cursive;
   font-size: 2.5rem;
   margin: 30px 20px;
 }
@@ -356,9 +375,9 @@ textarea {
 }
 
 .navActive {
-  color: var(--secondary);
+  color: rgb(255, 255, 255);
   cursor: default;
-  text-shadow: 3px 3px 15px rgba(255,255,255, .5);
+  text-shadow: 6px 6px 10px rgba(255, 0, 136);
 }
 @media only screen and (max-width: 1300px) {
   nav {
