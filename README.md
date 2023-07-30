@@ -19,6 +19,10 @@ A react based portfolio was developed to demonstrate capability in the latest te
 - HTML
 - CSS
 
+## Source
+
+Starter code utilized from edx.
+
 ## Usage
 
 File can used and shared for knowledge or expansion, as needed.
