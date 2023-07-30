@@ -201,6 +201,14 @@ input:focus {
   box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
 
+.error-text {
+  background-color: rgb(255, 242, 123);
+  color: red;
+  padding: 10px;
+  font-weight: 700;
+  border-radius: 33px;
+}
+
 header {
   background-image: url(./assets/img/sunrise.png);
   background-size: contain;
