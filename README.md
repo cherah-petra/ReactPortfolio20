@@ -9,18 +9,15 @@ A react based portfolio was developed to demonstrate capability in the latest te
 - Single-page application
 - Contains a header, content section and footer
 - Includes a contact form
-
-
+- Includes a portfolio with sample projects to showcase development skills
 
 ## Tech Used
 
-- Express.js
-- MongoDB database
-- Mongoose ODM
-
-## Credit
-
-Starter code by Sachin Jhaveri via edx Module 18 Challenge.
+- React
+- Node
+- Bootstrap
+- HTML
+- CSS
 
 ## Usage
 
@@ -32,6 +29,6 @@ LICENSE.txt
 
 ## Links
 
-- GitHub Repository: https://github.com/cherah-petra/SocialNetworkAPI
-- Video Demo: https://drive.google.com/file/d/17_onesHMrKJjeKkeYIuWKc4D3PjADox1/view 
+- GitHub Repository: https://github.com/cherah-petra/ReactPortfolio20 
+- URL: 
 
