@@ -13,7 +13,7 @@ function Contact() {
         id="name"
         type="name" 
         name="name"
-        placeholder='Name...'
+        placeholder='Name'
       />
       <ValidationError 
         prefix="Name" 
@@ -24,7 +24,7 @@ function Contact() {
         id="email"
         type="email" 
         name="email"
-        placeholder='Email...'
+        placeholder='Email'
       />
       <ValidationError 
         prefix="Email" 
@@ -34,7 +34,7 @@ function Contact() {
       <textarea
         id="message"
         name="message"
-        placeholder='Message...'
+        placeholder='Message'
       />
       <ValidationError 
         prefix="Message" 

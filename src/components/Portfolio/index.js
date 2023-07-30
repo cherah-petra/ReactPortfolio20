@@ -6,34 +6,28 @@ function Portfolio() {
   // Replace links with deployed projects and GitHub repos
   const [projects] = useState([
     {
-      name: 'surf-report',
-      description: 'MERN Stack',
-      link: "https://github.com",
-      repo: "https://github.com"
+      name: 'neighbourhoodLibrary',
+      description: 'Interactive Full-Stack Application',
+      link: "https://github.com/cherah-petra/NeighbourhoodLibrary",
+      repo: "https://github.com/cherah-petra/NeighbourhoodLibrary"
     },
     {
-      name: 'pastel-puzzels',
-      description: 'MERN Stack',
-      link: "https://github.com",
-      repo: "https://github.com"
+      name: 'nextCity',
+      description: 'Interactive Front-End Application',
+      link: "https://kimmh891223.github.io/next_city/",
+      repo: "https://github.com/kimmh891223/next_city"
     },
     {
-      name: 'run-buddy',
-      description: 'HTML/CSS',
+      name: 'passwordgenerator',
+      description: 'JavaScript: Password Generator',
       link: "https://github.com",
-      repo: "https://github.com"
+      repo: "https://github.com/cherah-petra/Challenge-03-JS-Password-Generator"
     },
     {
-      name: 'led-wall',
-      description: 'Node/IoT',
-      link: "https://github.com",
-      repo: "https://github.com"
-    },
-    {
-      name: 'calculator',
-      description: 'React/JavaScript/CSS',
-      link: "https://github.com",
-      repo: "https://github.com"
+      name: 'weatherDashboard',
+      description: 'Server-Side API: Weather Dashboard',
+      link: "https://cherah-petra.github.io/A-Helpful-Weather-Dashboard/",
+      repo: "https://github.com/cherah-petra/A-Helpful-Weather-Dashboard"
     },
   ]);
 

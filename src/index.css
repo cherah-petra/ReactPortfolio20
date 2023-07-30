@@ -3,19 +3,7 @@ main {
   max-width: 90%;
   padding: 50px 30px;
 }
-/* :root {
-  --primary: #000000;
-  --secondary: #343d31;
-  --tertiary: #b12704;
-  --light: #fafafa;
-  --dark: #799FBA;
-  --darker: #000000;
-  --alpha: rgba(255,255,255,.7);
-  --error: rgb(228, 46, 1);
-  --spacing-one: calc(1rem * 0.5);
-  --spacing-two: calc(1rem);
-  --spacing-five: calc(2.5rem);
-} */
+
 
 * {
   box-sizing: border-box;
@@ -44,7 +32,18 @@ h1 {
   margin: 5px 0;
   line-height: 1.25;
 }
-h2,
+h2 {
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 800;
+  margin: 5px 0;
+  line-height: 1.25;
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 255, 255);
+  text-decoration-thickness: 6px;
+
+
+}
 h3,
 h4,
 h5,
@@ -56,25 +55,15 @@ h6 {
 }
 
 h1 {
-  position: relative; /* Ensure proper positioning of the ::before pseudo-element */
-  color: rgba(255, 0, 136); /* Text color */
+  color: rgb(255, 255, 255); /* Text color */
   font-size: 5rem;
   margin: 50px 20px;
-  text-shadow: 4px 3px 15px rgba(212, 212, 212, 0.929);
+  height: 100vh;
+  
+
 }
 
-h1::before {
-  content: ""; /* Required for pseudo-elements */
-  position: absolute; /* Position the circle relative to the H1 */
-  top: 50%; /* Position the circle vertically in the middle */
-  left: 50%; /* Position the circle horizontally in the middle */
-  transform: translate(-50%, -50%); /* Center the circle exactly behind the text */
-  width: 100px; /* Adjust the circle's size as needed */
-  height: 100px; /* Adjust the circle's size as needed */
-  background-color: #fff; /* White circle color */
-  border-radius: 50%; /* Create a circular shape */
-  z-index: -1; /* Place the circle behind the text (lower z-index) */
-}
+
 
 
 h2 {
@@ -98,43 +87,84 @@ h6 {
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 18px;
   margin: 20px 0;
   line-height: 2rem;
+  font-weight: 400;
 }
 
 a {
-  color: var(--light);
+  color: #ff8800;
   text-decoration: none;
-  opacity: .5;
 }
 
 a:hover {
   opacity: 1;
   transition: all .2s ease-in-out;
+  color: #5cb7a0; 
+}
+
+/*Fonts colors*/
+
+.purple {
+  color: #b61190;
+}
+
+.pink {
+  color: #df1359;
+}
+
+.green {
+  color: #5cb7a0;
+
+}
+
+.orange {
+  color: #ff8800;
 }
 
 
 
+@keyframes colorchange {
+  0% {
+    background: #b61190;
+  }
+  14% {
+    background: #df1359;
+  }
+  28% {
+    background: #ff8800;
+  }
+  42% {
+    background: #5cb7a0;
+  }
+ 
+}
+
 
 button {
-  font-size: 1rem;
+  font-size: 28px;
   font-weight: 600;
   text-decoration: none;
-  border-radius: 0.5rem;
-  border: none;
+  border-radius: 33px;
+  border: 0px solid rgb(0, 255, 255);
   color: #fff;
   outline: none;
   cursor: pointer;
   margin: 0 1px;
-  background-color: var(--dark);
-  padding: 10px 15px;
-  opacity: 0.7;
+  background-color: rgb(0, 255, 255);
+  padding: 5px 25px;
+  font-family: 'Shadows Into Light', cursive;
+
 }
 
 
 button:hover {
-  opacity: 1;
+color:  rgb(0, 255, 255);
+background-color: rgba(255, 0, 136);
+font-size: 30px;
+transform: rotate(5deg);
+
 }
 
 button[disabled] {
@@ -157,75 +187,94 @@ form {
 input {
   margin: 10px 0;
   font-size: 1rem;
-  padding: 0.25rem;
+  padding: 0.50rem;
   width: 600px;
-  border: 1px solid var(--dark);
+  border: 1px solid white;
   outline: none;
   border-radius: 3px;
   transition: box-shadow 0.2s;
 }
 
+
 input:focus {
-  border: 1px solid var(--secondary);
+  border: 1px solid black;
   box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
 
-label {
-  margin-right: 10px;
+header {
+  background-image: url(./assets/img/sunrise.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 75vh;
+  width: 100vw;
+  background-position: center center;
+}
+
+header h1 {
+  display: flex;
+  margin: 5px 10px;
+  height: 15px;
+  width: 100%;
+justify-content: center;  
+font-size: 64px;
 }
 
 li {
   list-style: none;
 }
 
-header {
-  height: 200px;
-  position: relative;
-  overflow: hidden;
-  z-index: 2;
-}
-
-header h1 {
-  position: relative;
-  z-index: 2;
-}
-
-header img {
-  z-index: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-}
-
-
-
 nav {
-  position: relative;
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 2.5rem;
-  margin: 30px 20px;
+  position: absolute;
+  background-color: black;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  margin: 0;
 }
 
 nav a:hover {
-  text-decoration: none;
+  text-decoration: underline;
+  
+}
+
+.navActive {
+  color: #ff8800;
+  cursor: default;
 }
 
 nav li {
   cursor: pointer;
-  text-shadow: 2px 2px 10px rgba(0,0,0, 0.5);
-  margin: 0 50px;
+  margin: 0 25px;
+  text-transform: uppercase;
 }
 
+nav li:hover {
+  text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-thickness: 6px;
+  text-decoration-color: #df1359;
+
+}
 ul.skills {
-  line-height: 2rem;
+  line-height: 1.5rem;
+  display: flex;  
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  
 }
 
 ul.skills li {
-  list-style-type: circle;
+  list-style-type: none;
+  border-radius: 33px;
+  border: 1px solid white;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  width: 100%;
+  max-width: 150px;
+  margin: 5px;
+  text-align: center;
 }
 
 footer {
@@ -234,7 +283,7 @@ footer {
 }
 
 footer a {
-  color: var(--light);
+  color: white;
   opacity: .5;
   margin: 10px 20px;
   transition: all .3s ease-in-out;
@@ -242,15 +291,25 @@ footer a {
 
 footer a:hover {
   opacity: 1;
+  color: #df1359;
+  transform: rotate(5deg);
 }
 
 textarea {
+  font-size: 1rem;
   width: 600px;
   height: 200px;
-  border: 3px solid #cccccc;
-  padding: 5px;
+  padding: 0.50rem;
   margin-top: 10px;
+  border: 1px solid white;
+  outline: none;
+  border-radius: 3px;
+  font-family: sans-serif;
+  transition: box-shadow 0.2s;
 }
+
+
+
 
 .container {
   width: 85%;
@@ -329,59 +388,73 @@ textarea {
 .project {
   position: relative;
   width: 100%;
-  max-width: 500px;
-  height: 300px;
+  max-width: 400px;
+  height: 400px;
   margin: 30px;
+  border: 3px solid white;
+  border-radius: 33px;
+
 }
+
+
 
 .project-bg {
   position: relative;
   width: 100%;
   height: 100%;
+  border-radius: 33px;
+
 }
 
+
+
 .project-text {
-    color: var(--secondary);
+    color: #ffffff;
     position: absolute;
     top: 0px;
     bottom: 0px;
     left: 0px;
     right: 0px;
-    padding: 50px;
-    z-index: 900;
-    opacity: 0;
+    padding: 30px;
     transition: all .5s ease-in-out;
+    border-radius: 33px;
+    opacity: 0;
+
 }
 
 .project-text:hover {
-  background-color: var(--alpha);
-  opacity: 1;
-  border: 10px solid var(--secondary);
+  opacity: 100%;
+  border-radius: 33px;
+  animation: colorchange 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  z-index: 900;
+
 }
 
 .project-text h3 {
-  font-size: 2.5rem;
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
 }
 
 .project-text a {
   text-decoration: none;
   font-weight: bold;
-  color: var(--dark);
+  color: white;
   transition: all .3s ease-in-out;
+  text-decoration: underline;
+  text-decoration-thickness:6px;
+  text-decoration-color: #bce3c7;
+  text-transform: uppercase;
 }
 
-.project-text a:hover {
-  color: var(--darker);
-}
 
-.navActive {
-  color: rgb(255, 255, 255);
-  cursor: default;
-  text-shadow: 6px 6px 10px rgba(255, 0, 136);
-}
+
 @media only screen and (max-width: 1300px) {
   nav {
-    position: static;
+    position: absolute;
     display: block;
     z-index: 100;
     margin: 0 10px;
@@ -389,16 +462,28 @@ textarea {
   }
   header h1 {
     display: block;
-    height: 30px;
+    margin: 5px 10px;
+    height: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 58px;
+  }
+  header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+    width: 100vw;
+    background-position: center center;
   }
 }
 @media only screen and (max-width: 900px) {
   nav {
-    position: static;
+    position: absolute;
     display: block;
     z-index: 100;
-    margin: 0 10px;
+    margin: 0;
     font-size: 1.3rem;
+  
   }
   header h1 {
     display: block;
@@ -406,6 +491,14 @@ textarea {
     height: 15px;
     width: 100%;
     text-align: center;
-    font-size: 2.3rem;
+    font-size: 58px;
+  }
+
+  header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+    width: 100vw;
+    background-position: center center;
   }
 }

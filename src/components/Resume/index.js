@@ -5,29 +5,43 @@ function Resume() {
     <section className="my-5">
       <div className="my-2">
       <p>
-        Download my <a href="https://www.linkedin.com/">resume</a>
+        Access my full work history <a href="https://www.linkedin.com/" class="orange">VIA LINKEDIN</a>. 
         </p>
-        <h3>Front-end Proficiencies</h3>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-6 just"> 
+            <h3 class="pink">Development</h3>
         <ul className="skills">
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
           <li>jQuery</li>
-          <li>responsive design</li>
+          <li>Responsive Design</li>
           <li>React</li>
           <li>Bootstrap</li>
-        </ul>
-        <h3>Back-end Proficiencies</h3>
-        <ul className="skills">
           <li>APIs</li>
           <li>Node</li>
-          <li>Express</li>
-          <li>MySQL, Sequelize</li>
-          <li>MongoDB, Mongoose</li>
+          <li>MySQL</li>
           <li>REST</li>
-          <li>GraphQL</li>
+        </ul></div>
+            <div class="col-6 pink">  <h3>Relevant Experience</h3>
+        <ul className="skills">
+          <li>Non-profits</li>
+          <li>Fundraising</li>
+          <li>Digital Marketing</li>
+          <li>Email Marketing</li>
+          <li>Donation Forms</li>
+          <li>Event Registration</li>
+          <li>CRA Compliance</li>
+
         </ul>
-      </div>
+      </div></div>
+
+          </div>
+        </div>
+       
+      
     </section>
   );
 }
