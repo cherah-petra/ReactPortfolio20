@@ -26,7 +26,9 @@ function Page({ currentPage }) {
   return (
     <section>
       <h2 class="text-center">{capitalizeFirstLetter(currentPage.name)}</h2>
+      <div class="container">
       <PageContent>{renderPage()}</PageContent>
+      </div>
     </section>
   );
 }

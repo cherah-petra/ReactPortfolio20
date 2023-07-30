@@ -5,7 +5,7 @@ function Resume() {
     <section className="my-5">
       <div className="my-2">
       <p>
-        Access my full work history <a href="https://www.linkedin.com/" class="orange">VIA LINKEDIN</a>. 
+        Access my full work history <a href="https://www.linkedin.com/in/cheryl-muschallik/" class="orange" target="_blank">VIA LINKEDIN</a>. 
         </p>
 
         <div class="container">

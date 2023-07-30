@@ -20,7 +20,7 @@ function Portfolio() {
     {
       name: 'passwordgenerator',
       description: 'JavaScript: Password Generator',
-      link: "https://github.com",
+      link: "https://github.com/cherah-petra/Challenge-03-JS-Password-Generator",
       repo: "https://github.com/cherah-petra/Challenge-03-JS-Password-Generator"
     },
     {
