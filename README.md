@@ -23,6 +23,12 @@ A react based portfolio was developed to demonstrate capability in the latest te
 
 Starter code utilized from edx.
 
+## Screenshot
+
+![Screenshot](assets/img/reactscreenshot.png)
+
+
+
 ## Usage
 
 File can used and shared for knowledge or expansion, as needed.
@@ -34,5 +40,5 @@ LICENSE.txt
 ## Links
 
 - GitHub Repository: https://github.com/cherah-petra/ReactPortfolio20 
-- URL: 
+- URL: https://cherah-petra.github.io/ReactPortfolio20/
 
