@@ -25,7 +25,7 @@ Starter code utilized from edx.
 
 ## Screenshot
 
-[![Screenshot]([assets/img/reactscreenshot.png](src/assets/img/reactscreenshot.png)
+![Portfolio](assets/img/reactscreenshot.png)
 
 
 ## Usage
