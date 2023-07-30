@@ -2,7 +2,7 @@
   "name": "Portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/cherah-petra/ReactPortfolio20",
+  "homepage": "https://cherah-petra.github.io/ReactPortfolio20/",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@formspree/react": "^2.4.4",
