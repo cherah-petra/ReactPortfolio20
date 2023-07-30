@@ -25,7 +25,7 @@ Starter code utilized from edx.
 
 ## Screenshot
 
-![Portfolio](assets/img/reactscreenshot.png)
+![Portfolio](https://github.com/cherah-petra/ReactPortfolio20/blob/fc035ca318a0c2199d4836b9a25ba67906a3ec9e/src/assets/img/reactscreenshot.png)
 
 
 ## Usage
