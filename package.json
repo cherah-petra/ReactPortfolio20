@@ -1,15 +1,19 @@
 {
-  "name": "portfolio",
+  "name": "Portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/cherah-petra/ReactPortfolio20",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@formspree/react": "^2.4.4",
+    "gh-pages": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "5.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
