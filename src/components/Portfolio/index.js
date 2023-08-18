@@ -29,6 +29,12 @@ function Portfolio() {
       link: "https://cherah-petra.github.io/A-Helpful-Weather-Dashboard/",
       repo: "https://github.com/cherah-petra/A-Helpful-Weather-Dashboard"
     },
+    {
+      name: 'CloudConnect',
+      description: 'MERN Full-Stack Application',
+      link: "https://github.com/cherah-petra/CloudConnect",
+      repo: "https://github.com/cherah-petra/CloudConnect"
+    },
   ]);
 
   return (
